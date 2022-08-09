@@ -1,0 +1,439 @@
+
+/* Configurações gerais do body*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Configurações do cabeçalho*/
+
+.menu-header{
+    width: 100%;
+    height:180px;
+    background-color: #fce185;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+/* Configurações do cabeçalho "LOGO"*/
+.menu-header img{
+    width:50%;
+    height:50%;
+    
+}
+
+/* Configurações do cabeçalho "MENU DE NAVEGAÇÃO"*/
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;				
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: stretch;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+li a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 26px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #111;
+}
+
+li a:hover{
+    background-color: #F83764;
+    color: #fff;
+}
+
+/* Configurações do corpo*/
+
+main{
+    width: 100%;
+}
+
+article{
+    width: 100%;
+    height:500px;
+}
+
+/* Configurações do banner-primario*/
+
+main article .banner-primario {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height:500px;
+    background-image: url('../images/banner-primario.png');
+    background-color: #F83764; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    
+}
+
+/* Configurações do botão do banner-primario*/
+
+.myButton {
+    margin:20px;
+	box-shadow:inset 0px 39px 0px -24px #f83764;
+	background-color:#f83764;
+	border-radius:42px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:8px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #f83764;
+}
+.myButton:hover {
+	background-color:#f83764;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Configurações do CARDAPIO*/
+
+.main-cardapio{
+    max-width: calc(1300px - 10px);
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-cardapio-header{
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+    align-content: center;
+    
+}
+
+.main-cardapio-header h1{
+    color: #111;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+.main-cardapio article{
+    opacity: 1;
+    flex-basis: calc(25% - 30px);
+    max-height: 400px;
+    
+    
+}
+
+.main-cardapio article:hover{
+    opacity: 0.80;
+   
+}
+
+.main-cardapio article img{
+    width:300px;
+    height: 220px;
+}
+
+.main-cardapio article h2{
+    font-size: 1.3rem;
+    margin:10px 0;
+}
+
+.main-cardapio article h2:hover{
+    color: #333;
+}
+
+.main-cardapio article p{
+    margin:10px 0;
+}
+
+/* Configurações do SOBRE*/
+
+.main-sobre{
+    max-width: calc(1300px - 10px);
+    padding: 0 20px;
+    margin: 0 auto;
+    
+
+}
+
+.main-sobre-header{
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+    align-content: center;
+    
+}
+
+.main-sobre-header h1{
+    color: #111;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+.main-sobre-div{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    text-align: justify;
+    margin: 0px auto;
+    align-content: center;
+    
+}
+
+
+.main-sobre-div p{
+    width: 30%;
+    margin-top:25px;
+    padding: 30px;
+    text-align:justify;
+}
+
+.main-sobre-div img{
+    width:28%;
+    margin:10px;
+    
+
+}
+
+/* Configurações do SOBRE*/
+
+.main-contato{
+    max-width: calc(1300px - 10px);
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-contato-header{
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+    align-content: center;
+    
+}
+
+.main-contato-header h1{
+    color: #111;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+.main-contato-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-contato-div h2{
+    color: #111;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.main-contato-div img{
+    width:30%;
+    margin-right:50px;
+
+}
+
+/* Configurações do RODAPE*/
+
+footer{
+    width: 100%;
+    height:130px;
+    background-color: #fce185;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+}
+
+.footer_nav{
+    display: flex;
+    flex-direction:column;
+    margin-top:20px;
+
+}
+
+.footer_nav p{
+    color: #111;
+    margin: 5px 20px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.footer_nav a{
+    color: #111;
+    margin: 5px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.footer_nav a:hover{
+    color: #F83764;
+}
+
+.assinatura{
+    width:100%;
+    background-color:#fce185;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.assinatura p{
+    font-size:0.9rem;
+    font-weight:lighter;
+    
+}
+
+
+/* Configurações da pagina Cardapio PRATO ESCOLHIDO*/
+
+#main-cardapio2{
+    max-width: calc(1300px - 10px);
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#main-cardapio-header2{
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+    align-content: center;
+    
+}
+
+#main-cardapio-header2 h1{
+    color: #111;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+#main-cardapio2 article{
+    opacity: 1;
+    margin:50px;
+    max-height: 400px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+    
+    
+}
+
+#main-cardapio2 article:hover{
+    opacity: 0.80;
+   
+}
+
+#main-cardapio2 article img{
+    width:500px;
+    height: 320px;
+}
+
+#main-cardapio2 article h2{
+    font-size: 1.3rem;
+    margin:10px 0;
+}
+
+#main-cardapio2 article h2:hover{
+    color: #333;
+}
+
+#main-cardapio2 article p{
+    margin:10px 0;
+    text-align:justify;
+}
+
+
+
+/* Configurações da pagina Cardapio OUTROS PRATOS */
+
+
+
+#main-cardapio3{
+    width: 100%;
+    margin: 60px auto;
+    display: flex;
+    flex-direction:row;
+    align-items: baseline;
+    
+}
+
+#main-cardapio-header3{
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+    align-content: center;
+    
+}
+
+#main-cardapio-header3 h1{
+    color: #111;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+#main-cardapio3 article{
+    opacity: 1;
+    height: 50px;
+    margin:3px;
+    
+}
+
+#main-cardapio3 article a{
+    text-decoration:none;
+    color:#333;
+    
+}
+#main-cardapio3 article a:hover{
+    color:#F83764;
+    
+}
+
+#main-cardapio3 article h2{
+    font-size: 0.9rem;
+    margin:10px 0;
+}
